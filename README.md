@@ -17,12 +17,15 @@ Summary: One interface to read and write the data in various excel formats, impo
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pyexcel-io-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyexcel-io-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyexcel-io-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyexcel-io-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyexcel-io/badges/version.svg)](https://anaconda.org/conda-forge/pyexcel-io)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyexcel-io/badges/downloads.svg)](https://anaconda.org/conda-forge/pyexcel-io)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyexcel--io-green.svg)](https://anaconda.org/conda-forge/pyexcel-io) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyexcel-io.svg)](https://anaconda.org/conda-forge/pyexcel-io) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyexcel-io.svg)](https://anaconda.org/conda-forge/pyexcel-io) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyexcel-io.svg)](https://anaconda.org/conda-forge/pyexcel-io) |
 
 Installing pyexcel-io
 =====================
