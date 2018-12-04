@@ -24,7 +24,7 @@ requirements:
 
   run:
     - python
-    - lml ==0.0.1
+    - lml >=0.0.4
 
 test:
   imports:
