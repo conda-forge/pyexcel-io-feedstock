@@ -1,6 +1,6 @@
 {% set name = "pyexcel-io" %}
-{% set version = "0.5.10" %}
-{% set sha256 = "0acf69f6db900667cf971f8681ef4ebb1f62e170b66b4b234f18f226418fee63" %}
+{% set version = "0.5.11" %}
+{% set sha256 = "a53c38a2a9396d2ecb72768a7938270ecd375b7ebf0f5fd7e86212b76b3fb12f" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
 
   run:
     - python
-    - lml ==0.0.1
+    - lml >=0.0.4
 
 test:
   imports:
