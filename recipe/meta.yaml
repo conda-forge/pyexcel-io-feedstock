@@ -1,6 +1,6 @@
 {% set name = "pyexcel-io" %}
-{% set version = "0.5.11" %}
-{% set sha256 = "a53c38a2a9396d2ecb72768a7938270ecd375b7ebf0f5fd7e86212b76b3fb12f" %}
+{% set version = "0.5.12" %}
+{% set sha256 = "33554b6c1e656bbd9062b274beb0a53fddb606fea93b15d0b0943b214681a045" %}
 
 package:
   name: {{ name|lower }}
