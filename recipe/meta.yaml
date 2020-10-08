@@ -1,6 +1,6 @@
 {% set name = "pyexcel-io" %}
-{% set version = "0.5.20" %}
-{% set sha256 = "08dfe39553b996359b143de3d9ec43e196f1138d47cabb73af04a16821b84d79" %}
+{% set version = "0.6.2" %}
+{% set sha256 = "50bca19ab84be857fe04c8966f5ee5ccf1ff514baa53ff9946651a3706b1d832" %}
 
 package:
   name: {{ name|lower }}
@@ -41,11 +41,11 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'One interface to read and write the data in various excel formats, import the data into and export the data from databases'
+  summary: One interface to read and write the data in various excel formats, import the data into and export the data from databases
   description: |
-   'A python library to read and write structured data in csv, zipped csv ' +
-    'format and to/from databases' +
-    ''
+    'A python library to read and write structured data in csv, zipped csv ' +
+     'format and to/from databases' +
+     ''
   doc_url: https://readthedocs.org/projects/pyexcel-io/
   dev_url: https://github.com/pyexcel/pyexcel-io
 
