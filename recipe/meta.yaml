@@ -18,12 +18,12 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - pip
     - setuptools
 
   run:
-    - python
+    - python >=3.6
     - lml >=0.0.4
 
 test:
