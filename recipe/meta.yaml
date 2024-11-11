@@ -1,20 +1,19 @@
+{% set python_min = python_min|default("3.8") %}
 {% set name = "pyexcel-io" %}
 {% set version = "0.6.7" %}
-{% set sha256 = "2c33d8df505e21a13bed585ac6ab7d30ec826a9f156b758394af5d22359bddb9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 2c33d8df505e21a13bed585ac6ab7d30ec826a9f156b758394af5d22359bddb9
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install . --no-deps --ignore-installed
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
 
 requirements:
   host:
