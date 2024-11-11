@@ -1,32 +1,34 @@
+{% set python_min = python_min|default("3.8") %}
 {% set name = "pyexcel-io" %}
-{% set version = "0.6.6" %}
-{% set sha256 = "f6084bf1afa5fbf4c61cf7df44370fa513821af188b02e3e19b5efb66d8a969f" %}
+{% set version = "0.6.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2c33d8df505e21a13bed585ac6ab7d30ec826a9f156b758394af5d22359bddb9
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install . --no-deps --ignore-installed
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - lml >=0.0.4
 
 test:
+  requires:
+    - python {{ python_min }}
+  
   imports:
     - pyexcel_io
     - pyexcel_io.database
